@@ -304,7 +304,7 @@ function App() {
               method="POST"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="access_key" value="INSERT_KEY_LATER" />
+              <input type="hidden" name="access_key" value="d5250ae2-f9fb-4b8d-bf5c-b647eb381dfd" />
               <input type="hidden" name="redirect" value="https://web3forms.com/success" />
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
