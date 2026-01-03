@@ -300,12 +300,9 @@ function App() {
 
           <div className="bg-white p-10 md:p-12 rounded-lg border border-gray-200">
             <form
-              action="https://api.web3forms.com/submit"
+              action="https://script.google.com/macros/s/AKfycbz25iBJ0azW_NR3fEfGTkl6cN-kFK-QmX6gCBCC7J8XXCYSUdL_WBZ7BpccDE0lvdoFug/exec"
               method="POST"
-              onSubmit={handleSubmit}
             >
-              <input type="hidden" name="access_key" value="d5250ae2-f9fb-4b8d-bf5c-b647eb381dfd" />
-              <input type="hidden" name="redirect" value="https://web3forms.com/success" />
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
