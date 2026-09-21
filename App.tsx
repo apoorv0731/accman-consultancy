@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, Calculator, Users, Shield, Award, TrendingUp, Mail, Phone, MapPin, CheckCircle, ArrowRight } from 'lucide-react';
+import { BookOpen, Calculator, Users, Shield, Award, TrendingUp, Mail, MapPin, CheckCircle, ArrowRight } from 'lucide-react';
 
 function App() {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting'>('idle');
@@ -274,20 +274,13 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white p-8 rounded-lg text-center border border-gray-200">
               <div className="w-12 h-12 bg-[#F8FAFC] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-6 h-6 text-[#0F172A]" />
               </div>
               <h3 className="font-semibold text-[#0F172A] mb-3">Email</h3>
               <p className="text-gray-600">contact@accmanconsultancy.com</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg text-center border border-gray-200">
-              <div className="w-12 h-12 bg-[#F8FAFC] rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-[#0F172A]" />
-              </div>
-              <h3 className="font-semibold text-[#0F172A] mb-3">Phone</h3>
-              <p className="text-gray-600">(302) 602-2028</p>
             </div>
             <div className="bg-white p-8 rounded-lg text-center border border-gray-200">
               <div className="w-12 h-12 bg-[#F8FAFC] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -335,15 +328,14 @@ function App() {
 
               <div className="mb-6">
                 <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-3">
-                  Phone *
+                  Phone
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
-                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                  placeholder="(302) 602-2028"
+                  placeholder="Your phone number"
                 />
               </div>
 
@@ -405,7 +397,6 @@ function App() {
               <h4 className="font-semibold mb-6 text-white">Contact</h4>
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>contact@accmanconsultancy.com</li>
-                <li>(302) 602-2028</li>
                 <li>Jersey City, NJ 07310</li>
               </ul>
             </div>
